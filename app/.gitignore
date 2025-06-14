@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+.env/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+out/
+
+# Логи и временные файлы
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.DS_Store
+
+# Файлы настройки среды и секреты
+.env
+.env.*
+
+# SQLite базы данных (если используются)
+*.sqlite3
+
+# Migrations (если используете Alembic)
+migrations/versions/
+
+# Папка с кешем pip
+pip-wheel-metadata/
+
+# Файлы тестовых отчетов
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+
+# Docker
+*.dockerignore
+Dockerfile
+docker-compose.yml
