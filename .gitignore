@@ -33,7 +33,7 @@ out/
 *.sqlite3
 
 # Migrations (если используете Alembic)
-migrations/versions/
+app/migrations/versions/
 
 # Папка с кешем pip
 pip-wheel-metadata/
