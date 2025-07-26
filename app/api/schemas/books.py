@@ -23,7 +23,18 @@ class BookBase(BaseModel):
     author_id: int
 
 
-class BookRead(BookBase):
+class BookRead(BaseModel):
+    id: int
+
+    class Config:
+        orm_mode = True
+
+
+class BookCreate(BookBase):
+    pass
+
+
+class BookUpdate(BookBase):
     id: int
 
     class Config:

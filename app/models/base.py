@@ -1,9 +1,11 @@
-from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.orm import DeclarativeBase, mapped_column
 from typing import Annotated
-from sqlalchemy.orm import mapped_column
 
 
 int_primary_key = Annotated[int, mapped_column(primary_key=True, autoincrement=True)]
 
 class Base(DeclarativeBase):
     pass
+
+
+

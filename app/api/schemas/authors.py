@@ -22,11 +22,19 @@ class AuthorRead(BaseModel):
         orm_mode = True
 
 
-class AuthorReadWithBooks(BaseModel):
+class AuthorReadWithBooks(AuthorRead):
     books: List[BookRead] = []
 
 
+class AuthorUpdate(BaseModel):
+    id: int
+    first_name: str
+    last_name: str
+    birth_date: date
+    death_date: date
 
+    class Config:
+        orm_mode = True
 
 
 
